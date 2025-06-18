@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- In your <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Mohamed Amine – Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bg-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;"></canvas>
+  <div class="main-layout">
+    <aside class="sidebar">
+      <div class="profile-card">
+        <img src="images/11180f74f8516f8aca174c2118a2594e.jpg" alt="Amine's photo" class="profile-img">
+        <h1>mohamed Amine</h1>
+        <ul class="profile-info">
+          <li>15 years old</li>
+          <li>i know Python/data scientist/ai engineer/html/css/<br></li>
+          <li>a little bit java script !</li>
+          <li>Always learning and building creative projects!</li>
+          <li>and thats all 💙 !</li>
+        </ul>
+        <nav class="side-nav">
+          <ul>
+            <li><a href="#about" class="nav-link active">About me :</a></li>
+            <li><a href="#experience" class="nav-link">Experience :</a></li>
+            <li><a href="#projects" class="nav-link">Projects :</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div class="main-content">
+      <section id="about" class="about-me-section">
+        <h2>About Me</h2>
+        <p>
+          I'm Mohamed Amine, a 15-year-old self-taught developer with a deep passion for technology, design, and building things that actually work — not just look good.
+        </p>
+        <p>
+          I don’t just “code,” I explore. Whether it’s building full-stack apps, automating boring stuff with Python, or designing clean interfaces, I’m always pushing my limits to create something better than yesterday. My journey started with curiosity and quickly turned into an obsession with turning ideas into functional, beautiful digital products.
+        </p>
+        <p>
+          I believe in learning fast, failing faster, and coming back even stronger. I'm not afraid to dive deep, break things, fix them, and level up through real practice — not just tutorials. I’m the type of person who enjoys late-night coding sessions, debugging with music blasting in the background, and losing track of time while building something from scratch.
+        </p>
+        <p>
+          Right now, I'm focused on mastering web development and building my own creative tools. I love collaborating, sharing ideas, and building things with people who are just as obsessed with tech as I am.
+        </p>
+        <p>
+          In my free time, I enjoy gaming, exploring new tech trends, reading, and constantly looking for ways to challenge myself.
+        </p>
+        <p>
+          This is just the beginning — I'm not here to follow the path, I'm here to build mine.
+        </p>
+      </section>
+      <section id="experience" class="experience-section">
+        <h2>Experience</h2>
+        <div class="experience-list">
+          <div class="experience-item">
+            <div class="experience-details">
+                <ul>
+    <li>
+<strong>Self-Taught Web Developer<br>
+Jan 2025 – Present<br> 
+• Learned HTML, CSS, and JavaScript from scratch<br> 
+• Built multiple responsive websites using pure CSS and Flexbox/Grid<br>  
+• Started learning Python and used it to automate small tasks  </strong><br>
+    </li>
+    <li>
+<strong>Portfolio Website v2<br>  
+Apr 2025 – Present<br>  
+• Designed and developed a responsive personal portfolio using HTML/CSS/JS<br>  
+• Implemented a clean UI inspired by brittanychiang.com<br>  
+• Customized design to reflect my style and personal branding</strong><br>
+    </li>
+    <li>
+<strong>🔹 GitHub Contributor<br>
+• Pushed and maintained code for personal and open-source repositories<br>  
+• Created and documented small utility scripts in Python  </strong><br>
+    </li>
+    <li>
+<strong>🔹 Tech Support for Friends/Family  
+2023 – Present<br>  
+• Helped classmates and family with computer setup, formatting, and troubleshooting<br>  
+• Advised others on which laptops, apps, and tools to use for learning/programming</strong><br>
+    </li>
+    <li>
+<strong>🔹 In Progress<br>  
+• Learning React.js and API integration <br> 
+• Working on a Weather App and a To-Do List App using JavaScript .</strong><br>
+    </li>
+  </ul>
+              <div class="experience-tags">
+              </div>
+              <div id="profile"></div>
+              <div id="experience"></div>
+              <div id="projects"></div>
+              <script src="script.js"></script>
+          <div class="experience-item">
+      </section>
+      <section id="projects" class="projects-section">
+  <h2>Projects</h2>
+  <div class="project-card">
+    <h3>Study Timer Session Website 💙</h3>
+    <p><strong>Made in:</strong> 2 hours 💙</p>
+    <p><strong>Language:</strong> HTML/CSS 💙</p>
+    <p><strong>Description:</strong> It's a study timer based on the Pomodoro method💙.</p>
+    <p><strong><a href = "https://amine231456.github.io/my-website/" target = "_blank"  >click here to see the website</a></strong></p>
+  </div>
+    <div class="project-card">
+    <h3>Sky by playboi carti lyrics 💙</h3>
+    <p><strong>Made in:</strong> 3 hours 💙</p>
+    <p><strong>Language:</strong> HTML/CSS 💙</p>
+    <p><strong>Description:</strong> lyrics of a track called sky by playboi carti/rap💙.</p>
+    <p><strong><a href = " https://amine231456.github.io/playboi-carti/" target = "_blank"  >click here to see the website</a></strong></p>
+  </div>
+<div class="project-card">
+  <h3>my first (basic) portfolio 💙</h3>
+  <p><strong>Made in:</strong> 1 hour 30 minutes 💙</p>
+  <p><strong>Language:</strong> HTML/CSS 💙</p>
+  <p><strong>Description:</strong> my first portfolio ever (when I was junior web developer) 💙.</p>
+  <a href="https://amine231456.github.io/my-portfolio/">click here to see the website 💙</a>
+  <p class="note">this is my first portfolio after getting enough info and know anything about web development</p>
+</div>
+    </div>
+  </section>
+  <script>
+  // filepath: index.html
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+
+  document.addEventListener('mousemove', function(e) {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+    draw();
+  });
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = '#23418a';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    const gradient = ctx.createRadialGradient(
+      mouse.x, mouse.y, 0,
+      mouse.x, mouse.y, 250
+    );
+    gradient.addColorStop(0, 'rgba(255,255,255,0.18)');
+    gradient.addColorStop(1, 'rgba(33,51,104,0)');
+    ctx.beginPath();
+    ctx.arc(mouse.x, mouse.y, 250, 0, Math.PI * 2, false);
+    ctx.fillStyle = gradient;
+    ctx.fill();
+  }
+
+  draw();
+</script>
+<div class="social-sidebar">
+  <a href="https://github.com/amine231456" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://discord.com/sayonaraaa__" target="_blank"><i class="fab fa-discord"></i></a>
+  <a href="https://instagram.com/amine.wrld" target="_blank"><i class="fab fa-instagram"></i></a>
+  <span class="line"></span>
+</div>
+</div>
+</body>
+</html>
